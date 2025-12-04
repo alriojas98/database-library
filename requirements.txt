@@ -1,2 +1,5 @@
-mysql-connector-python>=8.0.0
+# Python dependencies for Library Management System
+# Install with: pip install -r requirements.txt
+
+mysql-connector-python>=8.0.0>=8.0.0
 configparser>=5.0.0
