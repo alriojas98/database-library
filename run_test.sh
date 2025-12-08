@@ -8,10 +8,10 @@ echo ""
 
 # Check Python
 echo "1. Checking Python..."
-if command -v python3 &> /dev/null; then
-    echo "   ✓ Python3 found: $(python3 --version)"
+if command -v python &> /dev/null; then
+    echo "   ✓ Python found: $(python --version)"
 else
-    echo "   ✗ Python3 not found!"
+    echo "   ✗ Python not found!"
     exit 1
 fi
 
@@ -28,7 +28,7 @@ fi
 # Install Python dependencies
 echo ""
 echo "3. Installing Python dependencies..."
-pip3 install mysql-connector-python --quiet
+pip install mysql-connector-python --quiet
 if [ $? -eq 0 ]; then
     echo "   ✓ Dependencies installed"
 else
@@ -38,7 +38,7 @@ fi
 # Check if database is accessible
 echo ""
 echo "4. Testing database connection..."
-python3 << 'EOF'
+python << 'EOF'
 import mysql.connector
 try:
     # Try to connect
@@ -74,7 +74,7 @@ fi
 # Run test suite
 echo ""
 echo "6. Running test suite..."
-python3 test_database.py
+python test_database.py
 
 echo ""
 echo "=================================================="

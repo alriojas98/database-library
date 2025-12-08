@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "Test 1: Quick Connection Test"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-python3 quick_test.py
+python quick_test.py
 TEST1=$?
 
 if [ $TEST1 -eq 0 ]; then
@@ -27,7 +27,7 @@ if [ $TEST1 -eq 0 ]; then
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     echo "Test 2: Detailed Connection Test"
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    python3 test_connection.py
+    python test_connection.py
     TEST2=$?
     
     if [ $TEST2 -eq 0 ]; then
@@ -38,7 +38,7 @@ if [ $TEST1 -eq 0 ]; then
         echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
         echo "Test 3: Full Test Suite (This may take 30 seconds...)"
         echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-        python3 test_database.py
+        python test_database.py
         TEST3=$?
         
         if [ $TEST3 -eq 0 ]; then

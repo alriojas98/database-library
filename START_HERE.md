@@ -25,7 +25,7 @@ mysql -u root -p < schema.sql
 
 ### 3️⃣ Test It!
 ```bash
-python3 quick_test.py
+python quick_test.py
 ```
 
 ---
@@ -86,19 +86,19 @@ python3 quick_test.py
 
 ### Test 1: Quick Test ⚡ (5 seconds)
 ```bash
-python3 quick_test.py
+python quick_test.py
 ```
 Checks: Dependencies, files, connection, tables
 
 ### Test 2: Connection Test 🔌 (10 seconds)
 ```bash
-python3 test_connection.py
+python test_connection.py
 ```
 Checks: Everything from Test 1 + detailed validation
 
 ### Test 3: Full Suite 🎯 (30 seconds)
 ```bash
-python3 test_database.py
+python test_database.py
 ```
 Tests: All CRUD, relationships, business logic
 
@@ -177,12 +177,12 @@ SELECT * FROM vw_active_transactions;
 
 ### Run the GUI
 ```bash
-python3 library_app_new.py
+python library_app_new.py
 ```
 
 ### Test Business Logic
 ```python
-python3
+python
 >>> from database import DatabaseConnection
 >>> db = DatabaseConnection('config.ini')
 >>> db.connect()
@@ -217,7 +217,7 @@ python3
 
 Everything is set up and documented. Just follow the steps above and you'll have a working, professional database system to demonstrate!
 
-**Start with:** `python3 quick_test.py`
+**Start with:** `python quick_test.py`
 
 Good luck! 🚀
 

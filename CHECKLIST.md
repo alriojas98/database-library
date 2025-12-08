@@ -6,7 +6,7 @@ Run through this checklist to ensure everything is ready:
 
 ### ☐ Step 1: Verify Python Installation
 ```bash
-python3 --version
+python --version
 # Should show Python 3.7 or higher
 ```
 
@@ -64,7 +64,7 @@ Now test everything in order:
 
 ### Test 1: Quick Test (Minimal)
 ```bash
-python3 quick_test.py
+python quick_test.py
 ```
 
 **What it checks:**
@@ -111,7 +111,7 @@ Test complete!
 
 ### Test 2: Connection Test (Detailed)
 ```bash
-python3 test_connection.py
+python test_connection.py
 ```
 
 **What it checks:**
@@ -122,7 +122,7 @@ python3 test_connection.py
 
 ### Test 3: Full Test Suite (Comprehensive)
 ```bash
-python3 test_database.py
+python test_database.py
 ```
 
 **What it tests:**
@@ -202,7 +202,7 @@ mysql -u root -p < schema.sql
 
 ### Test Everything
 ```bash
-python3 quick_test.py && python3 test_connection.py && python3 test_database.py
+python quick_test.py && python test_connection.py && python test_database.py
 ```
 
 ### Check What's in Database

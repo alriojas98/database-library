@@ -229,8 +229,8 @@ SUBMISSION_GUIDE.md    → How to present
 
 1. Open **START_HERE.md** right now
 2. Follow the 3-step quick start
-3. Run `python3 quick_test.py`
-4. When it passes, run `python3 test_database.py`
+3. Run `python quick_test.py`
+4. When it passes, run `python test_database.py`
 5. Read **DATABASE_DESIGN.md** to understand your work
 6. Use **SUBMISSION_GUIDE.md** when ready to submit
 
